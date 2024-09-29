@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+    border:2px solid black;
+    padding: 20px;
+}
+.product{
+    /* display: flex;
+    flex-direction: column; */
+    border:1px solid rgba(23, 1, 1, 0.15);
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.15);
+    background: rgba(0,0,0, 0.20);
+    /* height:540px; */
+}
+.product-img-block{
+    height: 300px; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+
+}
+
+.product-img{
+    max-width:100%;
+    max-height: 100%;
+    
+}
+.product-rating-img{
+    width:100%;
+    max-width:100px;
+}
+.product-info{
+    padding:10px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    /* height: 190px; */
+    
+}
+
+.product-name{
+    font-size:18px;
+    height:60px;
+}
+.quantity{
+    display: block;
+}
+.product label{
+    display: inline-block;
+}
+.p-line-4{
+    display: flex;
+    flex:1;
+    align-items: bottom;
+    justify-content: center;
+
+}
+.add-to-cart-button{
+    background: #f1c228;
+    white-space: nowrap;
+    border:1px solid orange;
+    border-radius: 16px;
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    max-width: 120px;
+    min-width:30px;
+    cursor: pointer;
+    transition: background 0.15s color 0.15s opacity 0.15s;
+    box-shadow: inset0px 0px 2px rgba(231, 147, 12, 0.55);
+
+}
+.add-to-cart-button:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.45);
+    font-size:14px;
+    font-weight:400;
+
+}
+.add-to-cart-button:active{
+    opacity:0.5;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    justify-content: bottom;
+
+}
+@media (min-width:750px) and (max-width:1000px ){
+  .main{
+    grid-template-columns: 1fr 1fr 1fr;
+    /* font-size:95%; */
+  }
+  
+}
+@media(min-width:400px)and (max-width:749px) {
+   .main{
+    grid-template-columns: 1fr 1fr ;
+    /* font-size:90%; */
+  }
+  
+}
+@media (max-width:399px) {
+   .main{
+    grid-template-columns: 1fr  ;
+    /* font-size:90%; */
+  }
+  
+}

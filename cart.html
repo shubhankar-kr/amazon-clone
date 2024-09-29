@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" src="cart.css">
+</head>
+<body>
+    <div class="product-items">
+        <div class="product">
+            <div class="product-img-block">
+                <img class="product-img" src=${products.image}>
+            </div>
+            <div class="product-info">
+                <div class="product-name-js product-name">${
+                    products.name
+                    }</div>
+                <div class="product-rating">
+                    <img class="product-rating-img" src="images/ratings/rating-${
+                                                  products.rating.stars * 10
+                                                }.png">
+                    ${products.rating.count}
+                </div>
+                <div class="product-price">Price : $${
+                    products.priceCents
+                    }</div>
+                <label>Quantity:</label>
+                <select class="quantity">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+                <div class="p-line-4">
+                    <button class="add-to-cart-button"><span>Add to Cart</span></button>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+           
+        
+        
+    <script>
+        document.querySelector('product-items')
+    </script>
+    
+</body>
+</html>
